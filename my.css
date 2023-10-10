@@ -1,0 +1,10 @@
+@media only screen and (min-width: 500px) {
+    .col-s-3 {width: 25%;}
+    .col-s-6 {width: 50%;}
+  }
+  
+  @media only screen and (min-width: 650px) {
+    .col-3 {width: 25%;}
+    .col-9 {width: 75%;}
+    .col-12 {width: 100%;}
+  }

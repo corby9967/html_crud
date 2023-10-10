@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./my.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,25 @@
 
     <script>
         function myFunction() {
-          confirm("게시물을 수정할까요?");
+          let x = document.getElementById("word").value;
+            let y = document.getElementById("meaning").value;
+            let z = document.getElementById("level").value;
+            if (x == "") {
+                alert("Enter a word");
+                return false;
+            }
+            else if (y == "") {
+                alert("Enter a meaning");
+                return false;
+            }
+            else if (z == "") {
+                alert("Enter a level");
+                return false;
+            }
+            else{
+                confirm("게시물을 수정할까요?");
+                return;
+            }
         }
     </script>
 
@@ -25,8 +44,11 @@
 
 </head>
 <body>
+    <div class="col-3 col-s-3">
     <h2>EDIT MENU</h2>
+    </div>
     <br>
+    <div class="col-3 col-s-9">
     <form>
         <label for="word">Word</label><br>
         <input type="text" id="word" name="word"><br><br>
@@ -35,6 +57,7 @@
         <label for="level">Level</label><br>
         <input type="text" id="level" name="level"><br><br>
     </form>
+    </div>
     <button onclick="myFunction()">수정</button>
 </body>
 </html>
