@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <style>
+        body {
+            border: 1px solid black;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            alert("게시물이 추가됩니다");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="word">Word</label><br>
+        <input type="text" id="word" name="word"><br><br>
+        <label for="meaning">Meaning</label><br>
+        <input type="text" id="meaning" name="meaning"><br><br>
+        <label for="level">Level</label><br>
+        <input type="text" id="level" name="level"><br><br>
+        <input type="submit" id="add" value="추가" onclick="myFunction()"></input>
+    </form>
+</body>
+</html>

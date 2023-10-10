@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+
+    <script>
+        function myFunction() {
+          confirm("게시물을 수정할까요?");
+        }
+    </script>
+
+    <style>
+        body {
+            border: 1px solid black;
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <label for="word">Word</label><br>
+        <input type="text" id="word" name="word"><br><br>
+        <label for="meaning">Meaning</label><br>
+        <input type="text" id="meaning" name="meaning"><br><br>
+        <label for="level">Level</label><br>
+        <input type="text" id="level" name="level"><br><br>
+    </form>
+    <button onclick="myFunction()">수정</button>
+</body>
+</html>
